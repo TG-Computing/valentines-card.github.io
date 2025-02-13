@@ -1,0 +1,30 @@
+.background img {
+    width: 200px;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+}
+
+#background_choice {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    font-family: "Pacifico";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    border: 1px solid red;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

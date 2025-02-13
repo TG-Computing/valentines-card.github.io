@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentines-Gift</title>
+    <link rel="stylesheet" href="resources/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="resources/javascript/main.js"></script>
+    <script src="resources/javascript/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <h1>Valentines-Card-Generator</h1>
 
-    <div id="welcome">
+    <div class="cards" id="welcome">
         <h2>Welcome to the Valentines Card Generator</h2>
         <p>Here you can create a custom Valentines Card for your loved one.</p>
         <p>Enter the name of your loved one and click the button below to get started.</p>
@@ -16,12 +22,31 @@
         <button id="start" onclick="getName()">Start</button>
     </div>
 
-    <div id="configuaration">
+    <div class="cards" id="configuaration">
         <h2>Configuration</h2>
         <p>Enter the message you would like to display on the card.</p>
-        <input type="text" id="message" placeholder="Enter your message">
+        <input type="text" id="message" placeholder="Enter your message" required>
+        <p>Choose the background of the card.</p>
+        <div id="background_choice">
+            <div class="background">
+                <input type="radio" id="background_1" name="background" value="background_1"><img src="resources/images/background_1.png" alt="background_1">
+            </div>
+            <div class="background">
+                <input type="radio" id="background_2" name="background" value="background_2"><img src="resources/images/background_2.png" alt="background_1">
+            </div>
+            <div class="background">
+                <input type="radio" id="background_3" name="background" value="background_3"><img src="resources/images/background_3.png" alt="background_1">
+            </div>
+        </div>
         <button id="generate" onclick="generateCard()">Generate Card</button>
+    </div>
 
+    <div class="cards" id="final">
+        <h2>Final Card</h2>
+        <div id="card">
+            <div id="card_background"></div>
+            <div id="card_message"></div>
+        </div>
     </div>
 </body>
 </html>
