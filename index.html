@@ -6,8 +6,22 @@
     <title>Valentines-Gift</title>
 </head>
 <body>
-    <h1>Valentines-Card</h1>
+    <h1>Valentines-Card-Generator</h1>
 
-    
+    <div id="welcome">
+        <h2>Welcome to the Valentines Card Generator</h2>
+        <p>Here you can create a custom Valentines Card for your loved one.</p>
+        <p>Enter the name of your loved one and click the button below to get started.</p>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button id="start" onclick="getName()">Start</button>
+    </div>
+
+    <div id="configuaration">
+        <h2>Configuration</h2>
+        <p>Enter the message you would like to display on the card.</p>
+        <input type="text" id="message" placeholder="Enter your message">
+        <button id="generate" onclick="generateCard()">Generate Card</button>
+
+    </div>
 </body>
 </html>
